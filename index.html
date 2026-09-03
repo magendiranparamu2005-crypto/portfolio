@@ -14,23 +14,32 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <header class="navbar">
+   <header>
 
-        <div class="logo">
-            PARAMSIVAN<span>.M</span>
-        </div>
+    <h1>PARAMASIVAN M</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="menu()">
+        ☰
+    </div>
 
-    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<script>
+    function menu() {
+        document.getElementById("nav").classList.toggle("show");
+    }
+</script>
 
 
     <!-- ================= HERO ================= -->
@@ -44,7 +53,7 @@
             </p>
 
             <h1>
-                PARAMSIVAN M
+                Shiva M
             </h1>
 
             <h2>
@@ -52,7 +61,7 @@
             </h2>
 
             <p class="hero-text">
-                I am a Computer Science Engineering passionate
+                I am a Computer Science Engineering student passionate
                 about Java, web development and building real-world
                 applications.
             </p>
@@ -108,7 +117,7 @@ console.log(shiva.solveProblems());
             </p>
 
             <h2>
-                I'm PARAMSIVAN M, a passionate developer.
+                I'm Shiva, a passionate developer.
             </h2>
 
             <p>
@@ -143,7 +152,7 @@ console.log(shiva.solveProblems());
 
                 <div>
                     <strong>👤 Name:</strong>
-                    <span>PARAMSIVAN M</span>
+                    <span>Shiva M</span>
                 </div>
 
                 <div>
@@ -523,13 +532,10 @@ console.log(shiva.solveProblems());
     <footer>
 
         <p>
-            © 2026 Paramasivan M. All Rights Reserved.
+            © 2026 Shiva M. All Rights Reserved.
         </p>
 
     </footer>
-
-
-    <script src="main.js"></script>
 
 
 </body>

@@ -16,53 +16,87 @@ body {
 
 
 /* ================= NAVBAR ================= */
-
-.navbar {
-    height: 65px;
-    background: #06152e;
+header {
+    height: 80px;
+    background-color: #020d20;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 12%;
-    
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    border-bottom: 1px solid #172b4d;
+    padding: 0 30px;
 }
 
-.logo {
-    font-size: 25px;
-    font-weight: bold;
+h1 {
+    color: white;
 }
 
-.logo span {
-    color: #1685ff;
-}
+/* Normal menu */
 
 nav ul {
     display: flex;
-    gap: 38px;
+    gap: 30px;
+
     list-style: none;
 }
 
 nav a {
-    text-decoration: none;
     color: white;
-    font-size: 14px;
-    font-weight: bold;
-
-    padding: 23px 0;
+    text-decoration: none;
 }
 
-nav a:hover,
-nav a.active {
-    color: #1685ff;
-    border-bottom: 2px solid #1685ff;
+/* Hamburger */
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        right: 0;
+
+        width: 200px;
+
+        background-color: #020d20;
+    }
+
+    nav.show {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    nav li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav li:hover {
+        background-color: #12345a;
+    }
+}
+
+
 
 
 
