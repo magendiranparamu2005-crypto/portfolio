@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,43 +6,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shiva M | Portfolio</title>
+    <title>Paramasivan M | Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
+<header>
 
-   <header>
+    <a href="#home" class="logo">
+        PARAMASIVAN <span>M</span>
+    </a>
 
-    <h1>PARAMASIVAN M</h1>
-
-    <!-- Hamburger -->
     <div class="hamburger" onclick="menu()">
-        ☰
+        <i class="fa-solid fa-bars"></i>
     </div>
 
     <nav id="nav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+
         </ul>
     </nav>
 
 </header>
 
-<script>
-    function menu() {
-        document.getElementById("nav").classList.toggle("show");
-    }
-</script>
+   
 
-
+                
     <!-- ================= HERO ================= -->
 
     <section id="home" class="hero">
@@ -53,7 +86,7 @@
             </p>
 
             <h1>
-                Shiva M
+                Paramasivan <span>M</span>
             </h1>
 
             <h2>
@@ -66,36 +99,80 @@
                 applications.
             </p>
 
-            <a href="#about" class="btn">
-                Explore My Profile
-            </a>
+            <div class="hero-buttons">
+
+                <a href="#about" class="btn">
+                    Explore My Profile
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
 
         </div>
 
 
+        <!-- CODE BOX -->
+
         <div class="code-box">
 
-            <p>// Building ideas into real world</p>
+            <div class="code-header">
 
-            <pre>
-class Developer {
+                <div class="window-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-    passion = "Learn. Code. Grow.";
+                <p>developer.java</p>
 
-    solveProblems() {
-        return "Turning challenges into solutions";
+            </div>
+
+            <pre><code>
+<span class="keyword">class</span> <span class="class-name">Developer</span> {
+
+    String passion =
+        <span class="string">"Learn. Code. Grow."</span>;
+
+    <span class="keyword">void</span> solveProblems() {
+
+        System.out.println(
+            <span class="string">
+            "Turning challenges into solutions"
+            </span>
+        );
     }
 }
 
-const shiva = new Developer();
+<span class="class-name">Developer</span> shiva =
+    <span class="keyword">new</span> <span class="class-name">Developer</span>();
 
-console.log(shiva.solveProblems());
-            </pre>
+shiva.solveProblems();
+            </code></pre>
 
         </div>
 
     </section>
-
 
 
     <!-- ================= ABOUT ================= -->
@@ -104,8 +181,10 @@ console.log(shiva.solveProblems());
 
         <div class="about-image">
 
-            <!-- Replace profile.jpg with your photo -->
-            <img src="WhatsApp Image 2026-09-04 at 12.52.10 PM.jpeg" alt="Shiva Profile">
+            <div class="image-border"></div>
+
+            <img src="WhatsApp Image 2026-09-04 at 12.52.10 PM.jpeg"
+                alt="Paramasivan Profile">
 
         </div>
 
@@ -134,15 +213,14 @@ console.log(shiva.solveProblems());
 
             <p>
                 I enjoy creating simple, responsive and user-friendly
-                websites and applications. I believe that continuous
-                learning and practical projects are the best ways to
-                improve my programming skills.
+                websites and applications. I believe continuous learning
+                and practical projects are the best ways to improve
+                programming skills.
             </p>
 
             <p>
                 My goal is to become a skilled Full Stack Developer and
-                build useful real-world applications that solve practical
-                problems.
+                build useful real-world applications.
             </p>
 
 
@@ -151,32 +229,56 @@ console.log(shiva.solveProblems());
             <div class="details">
 
                 <div>
-                    <strong>👤 Name:</strong>
-                    <span>Shiva M</span>
+                    <strong>
+                        <i class="fa-solid fa-user"></i>
+                        Name
+                    </strong>
+
+                    <span>Paramasivan M</span>
                 </div>
 
                 <div>
-                    <strong>🎓 Degree:</strong>
+                    <strong>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Degree
+                    </strong>
+
                     <span>B.E. Computer Science & Engineering</span>
                 </div>
 
                 <div>
-                    <strong>💻 Focus:</strong>
+                    <strong>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Focus
+                    </strong>
+
                     <span>Java Full Stack Development</span>
                 </div>
 
                 <div>
-                    <strong>📍 Location:</strong>
+                    <strong>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Location
+                    </strong>
+
                     <span>Chennai, Tamil Nadu</span>
                 </div>
 
                 <div>
-                    <strong>🚀 Career Goal:</strong>
+                    <strong>
+                        <i class="fa-solid fa-briefcase"></i>
+                        Career Goal
+                    </strong>
+
                     <span>Software Developer</span>
                 </div>
 
                 <div>
-                    <strong>📚 Learning:</strong>
+                    <strong>
+                        <i class="fa-solid fa-book"></i>
+                        Learning
+                    </strong>
+
                     <span>Java, SQL, HTML, CSS & JavaScript</span>
                 </div>
 
@@ -187,20 +289,17 @@ console.log(shiva.solveProblems());
     </section>
 
 
-
-    <!-- ================= EXTRA ABOUT DETAILS ================= -->
+    <!-- ================= EXTRA ABOUT ================= -->
 
     <section class="about-extra">
 
         <div class="extra-card">
 
             <div class="extra-icon">
-                🎯
+                <i class="fa-solid fa-bullseye"></i>
             </div>
 
-            <h3>
-                Career Objective
-            </h3>
+            <h3>Career Objective</h3>
 
             <p>
                 To start my career as a software developer where I can
@@ -214,12 +313,10 @@ console.log(shiva.solveProblems());
         <div class="extra-card">
 
             <div class="extra-icon">
-                🧠
+                <i class="fa-solid fa-brain"></i>
             </div>
 
-            <h3>
-                My Strengths
-            </h3>
+            <h3>My Strengths</h3>
 
             <p>
                 Problem solving, continuous learning, logical thinking,
@@ -233,12 +330,10 @@ console.log(shiva.solveProblems());
         <div class="extra-card">
 
             <div class="extra-icon">
-                💡
+                <i class="fa-solid fa-lightbulb"></i>
             </div>
 
-            <h3>
-                My Interests
-            </h3>
+            <h3>My Interests</h3>
 
             <p>
                 Java development, web development, creating portfolio
@@ -249,7 +344,6 @@ console.log(shiva.solveProblems());
         </div>
 
     </section>
-
 
 
     <!-- ================= SKILLS ================= -->
@@ -264,14 +358,15 @@ console.log(shiva.solveProblems());
             Technologies I Work With
         </h2>
 
-
         <div class="skill-container">
 
 
+            <!-- JAVA -->
+
             <div class="skill-card">
 
-                <div class="skill-icon">
-                    ☕
+                <div class="skill-icon java-icon">
+                    <i class="fa-brands fa-java"></i>
                 </div>
 
                 <div>
@@ -286,11 +381,12 @@ console.log(shiva.solveProblems());
             </div>
 
 
+            <!-- HTML -->
 
             <div class="skill-card">
 
-                <div class="skill-icon">
-                    🌐
+                <div class="skill-icon html-icon">
+                    <i class="fa-brands fa-html5"></i>
                 </div>
 
                 <div>
@@ -305,11 +401,12 @@ console.log(shiva.solveProblems());
             </div>
 
 
+            <!-- CSS -->
 
             <div class="skill-card">
 
-                <div class="skill-icon">
-                    🎨
+                <div class="skill-icon css-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
                 </div>
 
                 <div>
@@ -324,11 +421,12 @@ console.log(shiva.solveProblems());
             </div>
 
 
+            <!-- JAVASCRIPT -->
 
             <div class="skill-card">
 
-                <div class="skill-icon">
-                    JS
+                <div class="skill-icon js-icon">
+                    <i class="fa-brands fa-js"></i>
                 </div>
 
                 <div>
@@ -337,6 +435,46 @@ console.log(shiva.solveProblems());
                     <p>
                         Adding interaction and
                         functionality to websites.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SQL -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon sql-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <div>
+                    <h3>SQL</h3>
+
+                    <p>
+                        Database queries, tables,
+                        relationships and CRUD operations.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- GIT -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon git-icon">
+                    <i class="fa-brands fa-git-alt"></i>
+                </div>
+
+                <div>
+                    <h3>Git</h3>
+
+                    <p>
+                        Version control, repositories,
+                        commits and project management.
                     </p>
                 </div>
 
@@ -404,10 +542,23 @@ console.log(shiva.solveProblems());
 
             </div>
 
+
+            <div class="progress-item">
+
+                <div class="progress-heading">
+                    <span>SQL</span>
+                    <span>70%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar sql"></div>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
-
 
 
     <!-- ================= PROJECTS ================= -->
@@ -426,10 +577,12 @@ console.log(shiva.solveProblems());
         <div class="project-container">
 
 
+            <!-- PROJECT 1 -->
+
             <div class="project-card">
 
                 <div class="project-icon">
-                    🎬
+                    <i class="fa-solid fa-ticket"></i>
                 </div>
 
                 <h3>
@@ -442,18 +595,25 @@ console.log(shiva.solveProblems());
                     concepts.
                 </p>
 
-                <span>
-                    Java | OOP
-                </span>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>OOP</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
             </div>
 
 
+            <!-- PROJECT 2 -->
 
             <div class="project-card">
 
                 <div class="project-icon">
-                    🖥️
+                    <i class="fa-solid fa-globe"></i>
                 </div>
 
                 <h3>
@@ -462,22 +622,30 @@ console.log(shiva.solveProblems());
 
                 <p>
                     A responsive personal portfolio website created
-                    using HTML and CSS to showcase my skills and
+                    using HTML and CSS to showcase skills and
                     projects.
                 </p>
 
-                <span>
-                    HTML | CSS
-                </span>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
             </div>
 
 
+            <!-- PROJECT 3 -->
 
             <div class="project-card">
 
                 <div class="project-icon">
-                    🔔
+                    <i class="fa-solid fa-bell"></i>
                 </div>
 
                 <h3>
@@ -490,9 +658,45 @@ console.log(shiva.solveProblems());
                     notifications.
                 </p>
 
-                <span>
-                    Java | Polymorphism
-                </span>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Polymorphism</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <h3>
+                    Online Shopping System
+                </h3>
+
+                <p>
+                    A Java OOP project demonstrating product details,
+                    customer information and discount calculations.
+                </p>
+
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>OOP</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
             </div>
 
@@ -501,30 +705,37 @@ console.log(shiva.solveProblems());
     </section>
 
 
-
     <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="contact">
 
-        <p class="section-title">
-            CONTACT
-        </p>
+        <div class="contact-box">
 
-        <h2>
-            Let's Connect
-        </h2>
+            <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
 
-        <p>
-            I am interested in learning, developing projects and
-            starting my career in software development.
-        </p>
+            <p class="section-title">
+                CONTACT
+            </p>
 
-        <a href="mailto:yourmail@gmail.com" class="btn">
-            ✉ Contact Me
-        </a>
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                I am interested in learning, developing projects and
+                starting my career in software development.
+            </p>
+
+            <a href="mailto:yourmail@gmail.com" class="btn">
+                Contact Me
+                <i class="fa-solid fa-paper-plane"></i>
+            </a>
+
+        </div>
 
     </section>
-
 
 
     <!-- ================= FOOTER ================= -->
@@ -532,12 +743,56 @@ console.log(shiva.solveProblems());
     <footer>
 
         <p>
-            © 2026 Shiva M. All Rights Reserved.
+            © 2026 Paramasivan M. All Rights Reserved.
         </p>
+
+        <div class="footer-social">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
 
     </footer>
 
 
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function menu() {
+
+            const nav = document.getElementById("nav");
+
+            nav.classList.toggle("show");
+
+        }
+
+
+        /* Close menu after clicking a link */
+
+        document.querySelectorAll("#nav a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                document.getElementById("nav").classList.remove("show");
+
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
+```
